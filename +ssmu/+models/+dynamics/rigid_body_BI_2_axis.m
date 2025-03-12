@@ -20,7 +20,7 @@ end
 om = omega_BI_B;
 
 s_dot = ssmu.cpm(s_BI)*omega_BI_B; % Kinematics
-omega_BI_B_dot = inv(J)*( -ssmu.cpm(om)*J*om + tau_B ); % dynamics
+omega_BI_B_dot = -inv(J)*( ssmu.cpm(om)*J*om + tau_B ); % dynamics
 
 end
 
