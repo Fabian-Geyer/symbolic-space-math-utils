@@ -22,8 +22,8 @@ om = omega_BI_B;
 
 % Reduced Kinematics when using alpha and beta
 % Transformation: T_BA = T2(alpha)*T3(-beta)
-alpha_dot =  -(om1*cos(alpha)*sin(beta) - om2*cos(beta) + om3*sin(alpha)*sin(beta))/cos(beta);
-beta_dot  = om1*sin(alpha) - om3*cos(alpha);
+alpha_dot =  -(om(1)*cos(alpha)*sin(beta) - om(2)*cos(beta) + om(3)*sin(alpha)*sin(beta))/cos(beta);
+beta_dot  = om(1)*sin(alpha) - om(3)*cos(alpha);
 
 omega_BI_B_dot = -inv(J)*( ssmu.cpm(om)*J*om - tau_B ); % dynamics
 
